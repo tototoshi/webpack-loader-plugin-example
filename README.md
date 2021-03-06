@@ -1,4 +1,4 @@
-# webpack-loader-example
+# webpack-loader-plugin-example
 
 ```console
 $ make install serve
