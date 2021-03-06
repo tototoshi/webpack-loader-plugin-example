@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const StartFinishPlugin = require("./src/StartFinishPlugin");
 
 module.exports = {
   mode: "development",
@@ -18,6 +19,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new StartFinishPlugin({ start: "start", finish: "finish" }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
